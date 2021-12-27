@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BT猫</string>
+
+    <string name="magnet_detail_title">磁力详情</string>
+</resources>

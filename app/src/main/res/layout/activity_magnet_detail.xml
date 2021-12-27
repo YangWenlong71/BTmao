@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.magnetDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp"
+        app:maxButtonHeight="20dp"
+        app:titleMargin="0dp"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:src="@drawable/ic_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:text="BT猫-磁力详情"
+                android:textSize="17dp" />
+            <ImageView
+                android:src="@drawable/ic_add"
+                android:id="@+id/iv_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/title"
+            android:textSize="17dp"
+            android:padding="20dp"
+            android:textColor="@color/text_color"
+            android:text="@string/magnet_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:elevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:textColor="@color/text_color"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center"
+                android:text="校验值:"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/magnet_detail_title"
+                android:id="@+id/hash"
+                android:ellipsize="end"
+                android:maxEms="7"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:textColor="@color/text_color"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center"
+                android:text="文件数量:"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/magnet_detail_title"
+                android:id="@+id/files"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:textColor="@color/text_color"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center"
+                android:text="大小:"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/magnet_detail_title"
+                android:id="@+id/size"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:textColor="@color/text_color"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center"
+                android:text="更新日期:"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/magnet_detail_title"
+                android:id="@+id/convert"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:textColor="@color/text_color"
+                android:layout_weight="2"
+                android:gravity="center_vertical|center"
+                android:text="关键字:"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:textColor="#FA8072"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/magnet_detail_title"
+                android:id="@+id/keywords"
+                android:ellipsize="end"
+                android:maxEms="7"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/item_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <TextView
+            android:textColor="@color/text_color"
+            android:text="磁力链接"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <EditText
+            android:textColor="#696969"
+            android:maxLines="4"
+            android:background="@drawable/item_background"
+            android:textSize="15dp"
+            android:id="@+id/link"
+            android:text="magnet:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.androidx.PageMenu.PageMenuLayout
+                android:id="@+id/pagemenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:pagemenu_row_count="1"
+                app:pagemenu_span_count="6" />
+
+            <com.androidx.PageMenu.IndicatorView
+                android:id="@+id/main_home_entrance_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:gravity="0"
+                app:indicatorColor="#668b8989"
+                app:indicatorColorSelected="#1E90FF"
+                app:indicatorWidth="6" />
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/item_background"
+            android:id="@+id/ll_icon"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/iv_icon"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="扫码分享"
+                />
+        </LinearLayout>
+</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

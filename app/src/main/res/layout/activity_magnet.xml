@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".ui.magnetActivity">
+    <TextView
+        android:background="#ffffff"
+        android:id="@+id/tv_qq"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#2c2c2c"
+        android:textSize="16dp"
+        android:text="仅供内部交流\n owlsmart.net"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp"
+        app:maxButtonHeight="20dp"
+        app:titleMargin="0dp"
+        >
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_color"
+                android:text="BT猫-磁力检索"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+
+
+            <ImageView
+                android:visibility="invisible"
+                android:src="@drawable/ic_clear"
+                android:id="@+id/iv_clear"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <View
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+    <LinearLayout
+        android:elevation="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/item_background"
+        android:layout_height="wrap_content"
+
+        >
+        <View
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="0px"
+            android:layout_height="0px"/>
+
+        <EditText
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:id="@+id/et_search"
+            android:gravity="center"
+            android:hint="片名 / 资源 / 人名"
+            android:textSize="14dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:minHeight="20dp"
+            android:paddingLeft="15dp"
+            android:background="@null"
+            />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="9dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_search"
+            ></ImageView>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical"
+        >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <net.owlsmart.cili.view.AutoNewLineLayout
+            android:id="@+id/anl_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+    <net.owlsmart.cili.util.NoScrollGridView
+        android:id="@+id/lv_magentlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="1"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never">
+
+    </net.owlsmart.cili.util.NoScrollGridView>
+
+</LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>
