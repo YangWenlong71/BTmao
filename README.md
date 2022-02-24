@@ -2,8 +2,8 @@
 
 软件截图
 
-http://www.owlsmart.net/
 
+![image](https://github.com/YangWenlong71/BTmao/tree/main/Image/1645689885566.jpg)
 -更新日志-
 
 2021年07月14日：V1.0.2
